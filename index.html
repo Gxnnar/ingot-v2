@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingot 2.0</title>
-    <script src="ingot.min.js"></script>
-    <script src="inject.js"></script>
     <script>
         var webstore = window.open("https://chrome.google.com/webstorex");
         var injection = document.createElement('script');
         injection.src = "https://tebothegebo.github.io/ingot-v2/inject.js";
-        webstore.document.body.appendChild();
+        webstore.document.body.appendChild(injection);
     </script>
 </head>
 <body>
