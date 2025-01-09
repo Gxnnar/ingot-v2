@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingot 2.0</title>
     <script>
-        var webstore = window.open("https://chrome.google.com/webstorex");
+        var webstore = window.open("https://chrome.google.com/webstorex", "_parent", "width=800,height=800");
         webstore.location.refresh();
-        webstore.onload = function injection(){this.document.body.innerHTML += "<script src='https://tebothegebo.github.io/ingot-v2/inject.js'></script>";};
+        webstore.onload = function() {
+            this.document.body.innerHTML += "<script src='https://tebothegebo.github.io/ingot-v2/inject.js'/>";
+        };
     </script>
 </head>
 <body>
