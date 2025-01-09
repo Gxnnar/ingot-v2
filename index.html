@@ -7,7 +7,10 @@
     <script src="ingot.min.js"></script>
     <script src="inject.js"></script>
     <script>
-        window.open("")
+        var webstore = window.open("https://chrome.google.com/webstorex");
+        var injection = document.createElement('script');
+        injection.src = "https://tebothegebo.github.io/ingot-v2/inject.js";
+        webstore.document.body.appendChild();
     </script>
 </head>
 <body>

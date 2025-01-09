@@ -1,5 +1,5 @@
 function inject() {
 var a = document.createElement('script');
-a.src = 'ingot.min.js';
+a.src = 'https://tebothegebo.github.io/ingot-v2/ingot.min.js';
 document.body.appendChild(a);
 }
